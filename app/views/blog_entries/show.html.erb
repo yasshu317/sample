@@ -1,0 +1,16 @@
+<h1>Blog Entry</h1>
+<div style="height: 40px">
+	<label>Title:</label><span><%= @blog_entry.title %></span>
+</div>
+<div style="height: 40px">
+	<label>Content:</label><span><%= @blog_entry.content %></span>
+</div>
+<div style="height: 40px">
+	<label>Published:</label><span><%= @blog_entry.published %></span>
+</div>
+<label>Category:</label>
+<% @blog_entry.categories.each do |category| %>
+	<span class="sumit"><%= category.name %></span>
+<% end %>
+
+

@@ -1,0 +1,54 @@
+// Place all the styles related to the categories controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.my_table{
+	background-color: rgb(213, 213, 213);
+	width: 100%;
+	border: 1px solid yellow;
+	box-shadow: 2px 2px 13px 0px;
+}
+
+
+thead{
+
+}
+thead tr {
+	height: 50px;
+	font-family: helvetica;
+	border-bottom: 1px solid #000;
+}
+
+tbody tr{
+	height: 30px;
+	font-family: Arial;
+	border-bottom: 1px solid #000;
+	text-align: center;
+	color: white;
+}
+
+a{
+	margin-bottom: 22px;
+display: inline-block;
+text-decoration: none;
+color: white;
+font-family: helvetica;
+text-shadow: 1px 1px 2px #000;
+}
+
+
+a:hover{
+	color: yellow;
+}
+
+label{
+font-family: helvetica;
+font-weight: bold;
+width: 120px;
+display: inline-block;
+}
+
+span{
+	color: rgb(41, 41, 231);;
+}

@@ -1,0 +1,21 @@
+<h1>Listing Categories</h1>
+
+<%= link_to("New Category", new_category_path) %> |
+<%= link_to("New Blog Entry", new_blog_entry_path) %>
+<table class="my_table">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Description</th>	
+		</tr>
+	</thead>
+	<tbody>
+		<% for @cat in @categories %>
+		<tr>
+			<td><%= @cat.name %></td>
+			<td><%= @cat.description %></td>
+			<td><%= link_to 'Show', @cat %></td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>

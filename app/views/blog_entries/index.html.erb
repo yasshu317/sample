@@ -1,0 +1,25 @@
+<h1>Listing Blog Entries</h1>
+
+<%= link_to("New Blog Entry", new_blog_entry_path) %>
+<%= link_to("New Category", new_category_path) %>
+<table>
+	<thead>
+		<th>Title</th>
+		<th>Content</th>
+		<th>Published</th>
+		<th></th>
+		<th></th>
+	</thead>
+	<tbody>
+		<% @blog_entries.each do |blog_entry| %>
+		<tr>
+			<td><%=blog_entry.title%></td>
+			<td><%=blog_entry.content%></td>
+			<td><%=blog_entry.published%></td>
+			<td><%=link_to 'Show', blog_entry, id: 'show_id' %></td>
+			<td><%=link_to 'Destroy', blog_entry,id: 'show_id', method: :delete, data: { confirm: 'Are you sure?' } %></td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>
+
